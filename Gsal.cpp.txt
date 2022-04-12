@@ -1,0 +1,57 @@
+
+
+#include <iostream>
+
+using namespace std;
+class A{
+    private:
+           string name;
+           long int sal,HRA,DA,FOOD,Gsal;
+           int  hra,da,food;
+    public:
+        void get_data(){
+            cout<<"Enter your Name:- ";
+            cin>>name;
+            cout<<"Enter your salary:- ";
+            cin>>sal;
+            cout<<"Enter a hra:- ";
+            cin>>hra;
+            cout<<"Enter a da:- ";
+            cin>>da;
+            cout<<"Enter a food:- ";
+            cin>>food;
+            HRA=sal*hra/100;
+            DA=sal*da/100;
+            FOOD=sal*food/100;
+            Gsal=sal+HRA+DA+FOOD;
+        }
+       
+    void put_data( ){
+    
+    cout <<"Name :- "<<name<<endl;
+    cout <<"Salary :- "<<sal<<endl;
+    if(sal>20000 && sal<30000)
+    cout<<"Gsal :- "<<Gsal<<endl;
+     if(sal>30000 && sal<40000)
+    cout<<"Gsal :- "<<Gsal<<endl;
+     if(sal>40000 && sal<50000)
+    cout<<"Gsal :- "<<Gsal<<endl;
+}};
+int main()
+{
+    
+    A emp, emp1, emp2;
+      emp.get_data();
+      emp1.get_data();
+      emp2.get_data();
+      emp.put_data();
+      emp1.put_data();
+      emp2.put_data();
+    
+    
+    
+    
+    
+
+    return 0;
+}
